@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "reporting_jedis_client"
+  spec.name          = "sharded_jedis_client"
   spec.version       = "1.0.0"
   spec.authors       = ["Dermot A. Harris"]
   spec.email         = ["dermot.harris@teamaol.com"]
