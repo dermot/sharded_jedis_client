@@ -1,6 +1,6 @@
 # ShardedJedisClient
 
-TODO: Write a gem description
+The ShardedJedisClient is a wrapper around the jedis client.  
 
 ## Installation
 
@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+A wrapper around the Redis Jedis client.  The Jedsis client supports sharding.
+
+Example:
+
+
+  hosts = ['qa-cache-mstr-rpt.advertising.aol.com:6310','qa-cache-mstr-rpt.advertising.aol.com:6320','qa-cache-mstr-rpt.advertising.aol.com:6330']
+
+  redis =  ShardedJedisClient.new(hosts)
+
+  redis.get('some_key_271777')
 
 ## Contributing
 

@@ -1,6 +1,16 @@
 require 'delegate'
 require 'jedis-2.1.0.jar'
-
+#A wrapper around the Redis Jedis client.  The Jedsis client supports sharding.
+#
+#Example:
+#
+#
+#  hosts = ['qa-cache-mstr-rpt.advertising.aol.com:6310','qa-cache-mstr-rpt.advertising.aol.com:6320','qa-cache-mstr-rpt.advertising.aol.com:6330']
+#  
+#  redis =  ShardedJedisClient.new(hosts)
+#
+#  redis.get('some_key_271777')
+#
 class ShardedJedisClient < SimpleDelegator
   def initialize(hosts =[])
     super
