@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "sharded_jedis_client"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Dermot A. Harris"]
   spec.email         = ["dermot.harris@teamaol.com"]
   spec.description   = %q{Ruby wrapper of the Jedis client for Redis}
@@ -16,6 +16,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency "jruby-jedis", "~> 2.5"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"

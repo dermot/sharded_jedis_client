@@ -1,5 +1,5 @@
 require 'delegate'
-require 'jedis-2.1.0.jar'
+require 'jruby/jedis'
 #A wrapper around the Redis Jedis client.  The Jedsis client supports sharding.
 #
 #Example:
