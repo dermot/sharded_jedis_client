@@ -6,6 +6,7 @@ The ShardedJedisClient is a wrapper around the jedis client.
 
 Add this line to your application's Gemfile:
 
+    source 'http://adsqa.office.aol.com/gems/'
     gem 'sharded_jedis_client'
 
 And then execute:
@@ -13,12 +14,12 @@ And then execute:
     $ bundle
 
 Or install it yourself as:
-
+    $ gem sources --add source http://adsqa.office.aol.com/gems/
     $ gem install sharded_jedis_client
 
 ## Usage
 
-A wrapper around the Redis Jedis client.  The Jedsis client supports sharding.
+A wrapper around the Java Jedis client.  The Jedsis client supports sharding.
 
 Example:
 
