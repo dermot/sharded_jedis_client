@@ -12,6 +12,8 @@ require 'jruby/jedis'
 #  redis.get('some_key_271777')
 #
 class ShardedJedisClient
+  
+  attr_reader :pool
 
   def initialize(hosts =[])
     config = Java::OrgApacheCommonsPool2Impl::GenericObjectPoolConfig.new
