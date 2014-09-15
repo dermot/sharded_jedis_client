@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "sharded_jedis_client"
-  spec.version       = "1.0.1"
+  spec.version       = "1.0.3"
   spec.authors       = ["Dermot A. Harris"]
   spec.email         = ["dermot.harris@teamaol.com"]
   spec.description   = %q{Ruby wrapper of the Jedis client for Redis}
   spec.summary       = %q{Ruby wrapper of the Jedis client for Redis. The Jedis client implements sharding, which is why we use it.}
-  spec.homepage      = ""
+  spec.homepage      = "https://stash.ops.aol.com/users/dermotharris1/repos/sharded_jedis_client/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
