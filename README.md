@@ -24,7 +24,10 @@ A wrapper around the Java Jedis client.  The Jedsis client supports sharding.
 Example:
 
 
-  hosts = ['qa-cache-mstr-rpt.advertising.aol.com:6310','qa-cache-mstr-rpt.advertising.aol.com:6320','qa-cache-mstr-rpt.advertising.aol.com:6330']
+  hosts = %w[redis://:pa$$word@m-qa-reportingmstr001.advertising.aol.com:6310 
+             redis://:pa$$word@m-qa-reportingmstr001.advertising.aol.com:6320 
+             redis://:pa$$word@m-qa-reportingmstr001.advertising.aol.com:6330
+            ]
 
   redis =  ShardedJedisClient.new(hosts)
 
